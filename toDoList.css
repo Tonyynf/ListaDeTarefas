@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(52, 52, 252);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    padding: 25px;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: Medium;
+}
+
+section {
+    width: 40%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/*Onde fica a  to do list*/
+#Tasks {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#Tasks li {
+    list-style: none;
+    font: 20px 'Arial', sans-serif;
+    user-select: none;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#Tasks li:hover {
+    cursor: pointer;
+}
+
+#Tasks li::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-image: url(./imgs/unchecked.png);
+    background-image: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+#Tasks li.checked {
+    color: #555;
+    text-decoration: line-through;
+    transition-duration: .15s;
+}
+
+#Tasks li.checked::before {
+    background-image: url(./imgs/checkbox\ \(1\).png);
+    transition-duration: .15s;
+}
+
+#Tasks li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+#Tasks li span:hover {
+    background: #edeef0;
+    cursor: pointer;
+}
+
+/* Forms para adicionar tarefa */
+.boxAddTask {
+    padding: 20px;
+}
+
+#inputTask {
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #000;
+    /* Cor da linha inferior padrão */
+    outline: none;
+    /* Remova a borda padrão ao focar o input */
+    transition: border-color 0.3s;
+}
+
+#inputTask:focus {
+    border-color: #27ae60;
+    /* Cor da linha inferior quando o input está focado */
+}
+
+/* Botão de adicionar Task*/
+#btnAdd {
+    font-size: 20px;
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnAdd:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+#btnAdd:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+
+#btnAdd:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+/* Lixeira */
+
+#wastebasket {
+    background: transparent;
+    border: none;
+    width: 50px;
+    float: right;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background: #212529;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    box-sizing: border-box;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+}
+
+#footer-identifcation {
+    color: #fff;
+    margin: auto;
+    font: 20px arial, Medium sans-serif;
+}
+
+#social-media {
+    list-style: none;
+    font: 20px arial, Medium sans-serif;
+    transform: uppercase;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+#social-media ul {
+    padding: 0;
+}
+
+#social-media li {
+    font: Medium;
+    color: #fff;
+    /*isso */
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    /* Defina a escala inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#social-media li:hover {
+    color: #0B00FF;
+    cursor: pointer;
+    transform: scale(1.10);
+    transition: .2s;
+    cursor: pointer;
+}
