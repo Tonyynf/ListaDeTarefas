@@ -1,6 +1,6 @@
-# toDoList
+# Lista de Tarefas
 
-✔️ To Do List
+✔️ Lista de Tarefas
 
 📝 Descrição
 
@@ -8,7 +8,7 @@ Intuito do projeto é que você crie sua lista de tarefas enquanto usa seu compu
 
 📚 Conteúdo
 
-O lista possui funcionalidades simples e um design bem agradável 
+O lista possui funcionalidades simples e um design bem minimalista
 
 🔧 Tecnologias utilizadas
 
